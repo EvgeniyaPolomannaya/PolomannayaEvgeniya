@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета</title>
+</head>
+<body>
+    <h1>Заполните анкету</h1>
+    <form action="http://fe.it-academy.by/TestForm.php" name="reg" method="POST">
+        <fieldset>
+        <legend>Личные данные</legend>
+        <input placeholder="Фамилия" type="text" name="surname" autofocus required maxlength="25" pattern="[А-Яа-яЁё]"><br>
+        <input placeholder="Имя" type="text" name="name" required maxlength="20"><br>
+        <input placeholder="Отчество" type="text" name="patronymic" required maxlength="24">
+        <fieldset>
+            <legend>Паспортные данные</legend>
+            <input placeholder="AA" type="text" name="ser" required maxlength="2" pattern="[А-Яа-яЁё]">
+            <input placeholder="1234567" type="text" name="number" required maxlength="7">
+        </fieldset>
+        <fieldset>
+            <legend>Дата рождения</legend>
+            <input placeholder="2000" type="text" name="year" maxlength="4" pattern=""><br>
+            <select name="list[]" id="list">
+                <option value="1">Январь</option>
+                <option value="2">Февраль</option>
+                <option value="3">Март</option>
+                <option value="4">Апрель</option>
+                <option value="5">Май</option>
+                <option value="6">Июнь</option>
+                <option value="7">Июль</option>
+                <option value="8">Август</option>
+                <option value="9">Сентябрь</option>
+                <option value="10">Октябрь</option>
+                <option value="11">Ноябрь</option>
+                <option value="12">Декабрь</option>
+            </select><br>
+            <input type="number" name="bornDate">
+        </fieldset>
+        <select name="list1[]" id="list1" required>
+            <option value="1">РБ</option>
+            <option value="2">РФ</option>
+            <option value="3">УКР</option>
+         </select><br>
+         <div>Адрес:</div>
+         <textarea name="adres" id="" cols="15" rows="2"></textarea>
+        </fieldset>
+    </form>
+    
+    
+</body>
+</html>
